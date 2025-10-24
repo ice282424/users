@@ -1,21 +1,19 @@
 import { createRouter, createWebHistory } from 'vue-router'
-// 导入对应的页面组件
-import UserManagement from '../components/body.vue' // 用户管理页
-import DataManagement from '../components/charts.vue' // 数据管理页
-import CreateUser from '../views/createUser.vue' // 创建用户页面
-import EditUser from '../views/editUser.vue' // 编辑用户页面
+import UserManagement from '../components/body.vue'
+import DataManagement from '../components/charts.vue'
+import CreateUser from '../views/createUser.vue'
+import EditUser from '../views/editUser.vue'
 
 const routes = [
   {
     path: '/',
-    redirect: '/user-management', // 根路径默认跳转到用户管理
+    redirect: '/user-management',
   },
   {
     path: '/user-management',
     name: 'UserManagement',
     component: UserManagement,
     meta: { title: '用户管理' },
-    // 可添加用户管理的子路由
     children: [
       {
         path: 'create',
