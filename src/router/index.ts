@@ -38,7 +38,6 @@ const router = createRouter({
   routes,
 })
 
-// 路由守卫设置页面标题
 router.beforeEach((to, _from, next) => {
   if (to.meta.title) {
     document.title = to.meta.title as string
