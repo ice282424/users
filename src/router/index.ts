@@ -16,11 +16,11 @@ const routes = [
     meta: { title: '用户管理' },
     children: [
       {
-        path: 'create',
+        path: '/create-user',
         component: CreateUser,
       },
       {
-        path: 'edit/:id',
+        path: '/edit-user',
         component: EditUser,
       },
     ],

@@ -2,7 +2,7 @@
   <div class="app-container">
     <header class="app-header">
       <nav class="main-nav">
-        <router-link to="/user-management" class="nav-item">用户管理-修改后</router-link>
+        <router-link to="/user-management" class="nav-item">用户管理</router-link>
         <router-link to="/data-management" class="nav-item">图表管理</router-link>
       </nav>
     </header>

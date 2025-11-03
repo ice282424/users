@@ -2,6 +2,7 @@
   <div class="body-container">
     <div class="main-layout">
       <div>
+        <router-view />
         <div class="tree-filter-container">
           <el-input
             v-model="treeSearchValue"
@@ -62,6 +63,7 @@
         <el-table
           :data="paginatedUsers"
           border
+          stripe
           style="width: 100%"
           height="435px"
           :header-cell-style="{
